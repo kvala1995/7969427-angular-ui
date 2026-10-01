@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {Roles} from './roles/roles';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Roles],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('7969427-angular-ui');
+  title:String = "angular application";
 }
