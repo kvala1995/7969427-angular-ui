@@ -8,10 +8,8 @@ import { Component } from '@angular/core';
 })
 export class Roles {
 
-  name:string = "krishna";
-
-  showName():void{
-    alert("name is " + name);
-    }
+  currentDate:Date = new Date();
+  firstName:string = "krishna vamsi";
+  version:number = 4.12;
 
 }
