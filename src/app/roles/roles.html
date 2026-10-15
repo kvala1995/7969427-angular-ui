@@ -11,7 +11,22 @@
   </div>
 </div>
 <div class = "row">
-  <div class = "col-4">
+  <div class = "col-3">
      <input type = "text" class = "form-control" [value] = "firstName"/>
   </div>
+  <div class = "col-2">
+    <input [value] = "input"/>
+  </div>
+  <div class = "col-3">
+     <input type = "text" [(ngModel)]="selectedCity" class = "form-control"/>
+  </div>
+  <div class="col-3">
+    <select [(ngModel)] ="selectedCity" >
+      <option [value]="city_1">{{city_1}}</option>
+      <option [value]="city_2">{{city_2}}</option>
+      <option [value]="city_3">{{city_3}}</option>
+    </select>
+  </div>
+
 </div>
+
